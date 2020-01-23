@@ -1,3 +1,11 @@
+@keyframes example {
+  from {
+    background-color: #17A2B8;
+  }
+  to {
+    background-color: red;
+  }
+}
 .btn {
   display: block;
   background-color: #17A2B8;
@@ -8,6 +16,9 @@
   font-size: 2rem;
   border-radius: 10px;
   color: white;
+  animation-name: example;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
 }
 @media (max-width: 500px) {
   .btn {

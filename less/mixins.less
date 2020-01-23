@@ -9,6 +9,8 @@
     font-size: 2rem;
     border-radius: 10px;
     color: @color;
+    .animation(0.5s, infinite);
+      
 
     @media @mobile{        
         width: 100%;
@@ -23,4 +25,10 @@
 
 .btn{
     .custom-btn(@button-bg, 170px, white);
+}
+
+.animation(@duration, @count){
+    animation-name: example;
+    animation-duration: @duration;
+    animation-iteration-count: @count;
 }
