@@ -1,1 +1,34 @@
 // Navigation Styles here
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px dashed @navigation-border;
+
+    a{
+        font-size: 1.3rem;
+        margin: 0 20px;
+        text-decoration: none;
+
+        @media @tablet{        
+            margin: 0 10px;
+          }
+    }
+
+    @media @mobile{        
+        flex-direction: column;       
+    }
+}
+
+
+.top-content {
+
+    h2{
+        margin: 3% 0 1% 0;
+    }
+    
+    p{
+    border-bottom: 2px dashed @navigation-border;
+    }
+}
